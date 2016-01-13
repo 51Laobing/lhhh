@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>乐活黄海登陆</title>
+<link href="css/mstyle.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body class="bodybgs">
+	<nav class="nav3 p">
+		<i class="btn2"><a href="javascript:history.go(-1)">返回</a> </i> <strong>登录</strong>
+		<i class="btn3"><a href="register.html">注册</a> </i>
+	</nav>
+	<section class="form-group" id="inputObj1">
+		<form action="loginServlet" method="post">
+			<p class="flastHint" id="infoHint"></p>
+			<div class="form-text-login noa" id="accounts_1">
+				<label class="font-two" style="width: 90px;">手机号：</label> <input
+					type="text" name="id" class="form-text" placeholder="手机号">
+			</div>
+			<div class="form-text-login nob" id="pwd_1">
+				<label class="font-two" style="width: 90px;">密码：</label> <input
+					type="password" name="mm" class="form-text" placeholder="密码">
+			</div>
+			<input type="hidden" name="page" id="page" value="">
+			<div class="btn5" style="margin-top:12px">
+				<input type="submit" value="登&nbsp;&nbsp;录">
+			</div>
+		</form>
+	</section>
+	<script type="text/javascript">
+		var page = getUrlParam('page');
+		$("#page").attr("value",page);
+		function getUrlParam(name) {
+			var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+			var r = window.location.search.substr(1).match(reg); //匹配目标参数
+			if (r != null)
+				return unescape(r[2]);
+			return null; //返回参数值
+		}
+	</script>
+</body>
+</html>

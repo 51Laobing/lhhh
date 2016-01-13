@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="LHHH_Client"
+  id="myeclipse.1448023969269"
+  context-root="/LHHH_Client"
+  j2ee-spec="6.0"
+  archive="LHHH_Client.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
